@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class GraphCycleDetection {
     
@@ -77,7 +75,7 @@ public class GraphCycleDetection {
         int V = 7;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
-        
+
         boolean ans=detectCycle(graph, new boolean[V], 0, new boolean[V]);
         System.out.println(ans);
     }
